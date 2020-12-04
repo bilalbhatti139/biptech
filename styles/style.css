@@ -126,3 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* Font Face */
+@font-face {
+  font-family: 'GiloryLight';
+  src:url('../assets/fonts/Gilroy-Light.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GiloryBold';
+  src:url('../assets/fonts/Gilroy-ExtraBold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+}
+nav li a{
+  font-family: "GiloryLight";
+  font-family: "GiloryBold";
+}
+nav{
+  background-color: #ffffff!important;
+  background: transparent;
+}
