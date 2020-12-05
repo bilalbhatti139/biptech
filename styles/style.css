@@ -1,4 +1,11 @@
 /* Import Google Font */
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url("/assets/fonts/Gilroy-Light.ttf") format("truetype"),
+    url("/assets/fonts/Gilroy-Medium.ttf") format("truetype"),
+    url("/assets/fonts/Gilroy-Regular.ttf") format("truetype"),
+    url("/assets/fonts/Gilroy-Bold.ttf") format("truetype");
+}
 
 /* Reset CSS */
 
@@ -106,6 +113,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Gilroy";
 }
 ol,
 ul {
@@ -127,50 +135,47 @@ table {
   border-spacing: 0;
 }
 
-body{
-  font-family: "gilroy", sans-serif;
+nav li a {
+  color: #292930;
 }
-nav li a{
-  color:#292930;
-}
-nav{
+nav {
   width: 100%;
-  padding: 30px 0px!important;
+  padding: 30px 0px !important;
 }
-.button_radius{
+.button_radius {
   border-radius: 10px;
 }
-a:hover{
-  text-decoration: none!important;
+a:hover {
+  text-decoration: none !important;
 }
-.head_side_links a{
-  color:#292930;
+.head_side_links a {
+  color: #292930;
 }
-.head_side_links a:first-child{
-  margin-right: 15px; 
+.head_side_links a:first-child {
+  margin-right: 15px;
 }
-.head_side_links .get_started{
-  background-color: #01B6EB;
+.head_side_links .get_started {
+  background-color: #01b6eb;
   padding: 10px 15px;
   color: #ffffff;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
 }
-.main_header{
+.main_header {
   display: flex;
 }
-.main_header_text h2{
+.main_header_text h2 {
   font-size: 35px;
   font-weight: 700;
 }
-.main_header_text p{
+.main_header_text p {
   font-size: 18px;
   font-weight: 400;
 }
-@media(min-width:767px){
-  .main_header div{
+@media (min-width: 767px) {
+  .main_header div {
     width: 50%;
   }
 }
