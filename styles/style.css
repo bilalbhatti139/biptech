@@ -127,26 +127,50 @@ table {
   border-spacing: 0;
 }
 
-/* Font Face */
-@font-face {
-  font-family: 'GiloryLight';
-  src:url('../assets/fonts/Gilroy-Light.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GiloryBold';
-  src:url('../assets/fonts/Gilroy-ExtraBold.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-}
 body{
+  font-family: "gilroy", sans-serif;
 }
 nav li a{
-  font-family: "GiloryLight";
-  font-family: "GiloryBold";
+  color:#292930;
 }
 nav{
-  background-color: #ffffff!important;
-  background: transparent;
+  width: 100%;
+  padding: 30px 0px!important;
+}
+.button_radius{
+  border-radius: 10px;
+}
+a:hover{
+  text-decoration: none!important;
+}
+.head_side_links a{
+  color:#292930;
+}
+.head_side_links a:first-child{
+  margin-right: 15px; 
+}
+.head_side_links .get_started{
+  background-color: #01B6EB;
+  padding: 10px 15px;
+  color: #ffffff;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.main_header{
+  display: flex;
+}
+.main_header_text h2{
+  font-size: 35px;
+  font-weight: 700;
+}
+.main_header_text p{
+  font-size: 18px;
+  font-weight: 400;
+}
+@media(min-width:767px){
+  .main_header div{
+    width: 50%;
+  }
 }
