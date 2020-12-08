@@ -567,6 +567,58 @@ p {
     top: 0;
     z-index: -1;
 }
+.bullet_numbers{
+    counter-reset: my-awesome-counter;
+}
+.bullet_numbers li{
+    transition: 0.2s all ease-in-out;
+    position: relative;
+    counter-increment: my-awesome-counter;
+    padding: 15px;
+    padding-left: 60px;
+    border-radius: 20px;
+}
+.bullet_numbers li::before{
+    transition: 0.2s all ease-in-out;
+    position: absolute;
+    left: 20px;
+    display: flex;
+    width: 30px;
+    content: counter(my-awesome-counter);
+    height: 30px;
+    border-radius: 50%;
+    background: #F8DBA4;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.bullet_numbers li:hover::before{
+    background: #ffffff;
+    color: #292930;
+}
+.bullet_numbers li:hover{
+    overflow: hidden;
+    background-image: url("../assets/images/orangevector.png");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+.bullet_numbers li h4{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.bullet_numbers li p{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.terminal_heading{
+    font-weight: 700;
+    font-size: 34px;
+    margin: 50px 0px;
+    margin-bottom: 70px;
+}
 @media (max-width: 768px) {
     .fourth_row h3 {
         font-size: 16px;
@@ -866,6 +918,15 @@ p {
     .biplife_page .main_inner {
         margin-bottom: 0px;
     }
+    .terminal .mobile_image{
+        margin: 0 auto;
+    }
+    .terminal h4 , .terminal p{
+        text-align: left;
+    }
+    .buttons_container .btn_primary{
+       margin: unset;
+    }
 }
 @media (min-width: 769px) and (max-width: 1366px) {
     h2 {
@@ -943,17 +1004,21 @@ p {
         width: 48%;
     }
 }
-@media (max-width: 991px) {
-    .head_side_links {
-        display: none;
-    }
-}
-@media (max-width: 1024px) {
-    .triangle_vector .triangle_img{
-        display: none;
-    }
-}
+
 @media (max-width: 1366px) {
+    .bullet_numbers li h4{
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .bullet_numbers li p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .bullet_numbers li::before{
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
     .third_row h3 {
         width: 90%;
     }
@@ -961,6 +1026,33 @@ p {
         width: 100%;
     }
 }
+@media (max-width: 1024px) {
+    .triangle_vector .triangle_img{
+        display: none;
+    }
+    .bullet_numbers li{
+        padding-left: 55px;
+    }
+    .bullet_numbers li::before{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .bullet_numbers li h4{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .bullet_numbers li p{
+        line-height: 14px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .head_side_links {
+        display: none;
+    }
+}
+
 @media (max-width: 444px) {
     .home_tabs .nav-tabs .nav-item a {
         padding: 3px;
