@@ -164,6 +164,7 @@ nav {
 }
 a:hover {
     text-decoration: none !important;
+    cursor: pointer;
 }
 .head_side_links a {
     color: #292930;
@@ -186,7 +187,7 @@ a:hover {
 .buttons_container a {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 14px;
 }
 .buttons_container a,
 .buttons_container {
@@ -217,12 +218,75 @@ a:hover {
     width: 80%;
     margin: 0 auto;
 }
+.home_tabs {
+    width: 80%;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-image: url("../assets/images/can.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 70%;
+}
+.home_tabs .home_tabs_inner {
+    width: 75%;
+    background: #ffffff;
+    position: relative;
+    top: -1px;
+}
+.home_tabs .nav-tabs {
+    border: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top-left-radius: 30px;
+    box-shadow: 0px -1px 12px -9px rgb(0 0 0 / 30%);
+}
+.home_tabs .tab-content {
+    padding-top: 30px;
+    border-bottom-left-radius: 30px;
+}
+.home_tabs .mobile_image {
+    width: 60%;
+    margin: 0 auto;
+}
+.home_tabs .nav-tabs .nav-item a {
+    border: 0px;
+    display: grid;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #2e2e2e;
+    padding-bottom: 40px;
+}
+.home_tabs .nav-tabs .nav-item a span {
+    position: relative;
+}
+.home_tabs .nav-tabs .nav-item a.active span:after {
+    content: " ";
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    border-bottom: 4px solid #2e2e2e;
+    top: 50px;
+}
 .main_inner {
     width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+}
+.scroll {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 70px;
+}
+.home_tabs .main_inner {
+    width: 80%;
+    margin-bottom: 30px;
+}
+.home_tabs .tab-content > .active {
+    padding-bottom: 100px;
 }
 .details_area {
     display: flex;
@@ -316,14 +380,6 @@ p {
     position: relative;
     text-align: center;
 }
-.mobile_image .mobile_png {
-    display: block;
-    margin: 0 auto;
-}
-.second_row .mobile_image .mobile_png {
-    width: 55%;
-}
-
 .second_row .mobile_image {
     margin-bottom: 75px;
 }
@@ -344,7 +400,7 @@ p {
     font-size: 14px;
     background: #ffffff;
     color: #01b6eb !important;
-    border-radius: 16px !important;
+    border-radius: 14px !important;
     border: 2px solid #01b6eb;
     padding: 13px 18px;
     font-weight: bold;
@@ -354,9 +410,7 @@ p {
 .mobile_image {
     margin-bottom: 50px;
 }
-.line_border {
-    width: 45%;
-}
+
 .navbar-toggler {
     border: 0px;
     padding: 0px;
@@ -464,15 +518,39 @@ p {
     bottom: 263px;
     z-index: -1;
 }
-.elipse_div .elispe {
-    position: relative;
-    bottom: 240px;
-}
+
 .image_area img {
     display: block;
     margin: 0 auto;
 }
-
+.home_tabs h3,
+.home_tabs h2 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.home_tabs p,
+.home_tabs .fourth_remaining span {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.home_tabs .btn_primary,
+.home_tabs .btn_primary_invert,
+.home_tabs .link_primary {
+    font-size: 10px;
+    line-height: 14px;
+    border-radius: 12px;
+    padding: 13px 15px;
+}
+.home_tabs .fourth_row .fourth_one,
+.home_tabs .third_row .third_one {
+    margin-bottom: 30px;
+}
+.home_tabs .fourth_row p,
+.home_tabs .second_row .mobile_image {
+    margin-bottom: 0px;
+}
 @media (max-width: 767px) {
     .fourth_row h3 {
         font-size: 16px;
@@ -546,12 +624,6 @@ p {
     .second_row {
         flex-direction: column-reverse;
     }
-    .second_row .mobile_image .mobile_png {
-        width: 50%;
-    }
-    .line_border {
-        width: 40% !important;
-    }
     .btn_primary {
         margin: 0 auto;
         border-radius: 10px;
@@ -562,14 +634,12 @@ p {
     .main_inner .image_area {
         width: 100%;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
     .line a {
         display: none;
     }
-    .mobile_image .elispe {
-        width: 14%;
-    }
-
     .mobile_image,
     .second_row .mobile_image {
         margin-bottom: 30px;
@@ -684,8 +754,91 @@ p {
     .header_wrapper {
         margin-bottom: 25px;
     }
+    .home_tabs{
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    .home_tabs .home_tabs_inner{
+        margin: 0px 15px;
+    }
+    .home_tabs .tab-content {
+        z-index: 31;
+        box-shadow: -3px 4px 10px -8px rgb(0 0 0 / 10%);
+        position: relative;
+    }
+    .home_tabs .tab-content > .active{
+        padding: 15px;
+    }
+    .home_tabs .nav-tabs .nav-item a {
+        padding: 5px;
+        font-size: 10px;
+        padding-bottom: 10px;
+        grid-template-rows: 20px;
+    }
+    .home_tabs .nav-tabs .nav-item a img {
+        height: 10px;
+    }
+    .home_tabs .nav-tabs .nav-item a.active span:after {
+        top: 25px;
+        border-bottom: 2px solid #2e2e2e;
+    }
+    .home_tabs p,
+    .home_tabs .fourth_remaining span {
+        font-size: 10px;
+    }
+    .home_tabs .main_inner {
+        width: 100%;
+    }
+    .home_tabs .main_inner,
+    .second_row {
+        flex-direction: row;
+    }
+
+    .home_tabs h3,
+    .home_tabs h2 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+    .home_tabs p,
+    .home_tabs .fourth_remaining span {
+        font-size: 8px;
+        line-height: 10px;
+        margin-bottom: 8px;
+    }
+    .home_tabs .btn_primary,
+    .home_tabs .btn_primary_invert,
+    .home_tabs .link_primary {
+        font-size: 8px!important;
+        line-height: 12px;
+    }
+    .home_tabs .btn_primary, .home_tabs .btn_primary_invert, .home_tabs .link_primary{
+        border-radius: 6px!important;
+        padding: 5px 10px!important;
+    }
+    .home_tabs .details_area{
+        margin-bottom: 10px;
+    }
+    .home_tabs .buttons_container{
+        flex-direction: column;
+    }
+    .home_tabs .buttons_container a:first-child{
+        margin-bottom: 10px;
+    }
+    .home_tabs .buttons_container .btn_primary_invert{
+        margin-left: 0px;
+    }
+    .home_tabs .tab-content{
+        padding-top: 0px;
+    }
+    .home_tabs .nav-tabs .nav-item a:first-child {
+        border-top-left-radius: 30px;
+    }
+    .home_tabs .third_row img{
+        height: 20px;
+    }
 }
-@media (min-width: 768px) and (max-width: 1366px) {
+@media (min-width: 769px) and (max-width: 1366px) {
     h2 {
         font-size: 22px;
         line-height: 33px;
@@ -694,18 +847,33 @@ p {
         font-size: 16px;
         margin-bottom: 36px;
     }
-    .mobile_image .mobile_png {
-        width: 80%;
-    }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home_tabs .nav-tabs .nav-item a {
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .home_tabs .nav-tabs .nav-item a.active span:after {
+        top: 30px;
+    }
     .buttons_container a {
         font-size: 12px;
         padding: 15px !important;
         border-radius: 14px;
     }
+    .home_tabs .main_inner {
+        width: 90%;
+    }
+    .footer_rectangle img {
+        width: 90px;
+    }
     .main3 .buttons_container .btn_primary {
         padding: 17px !important;
+    }
+    .home_tabs .buttons_container .btn_primary,
+    .home_tabs .buttons_container .btn_primary_invert {
+        padding: 13px !important;
     }
     .buttons_container img {
         height: 20px !important;
@@ -714,7 +882,13 @@ p {
         width: 100%;
     }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+    .footer_rectangle img {
+        width: 70px;
+    }
+    .line div {
+        top: -110px;
+    }
     .black_span {
         width: 50px;
         border-bottom: 4px solid #292930;
@@ -753,5 +927,14 @@ p {
     }
     .third_row p {
         width: 100%;
+    }
+}
+@media (max-width: 444px) {
+    .home_tabs .nav-tabs .nav-item a {
+        padding: 3px;
+        font-size: 7px;
+    }
+    .home_tabs .nav-tabs .nav-item a.active span:after {
+        top: 15px;
     }
 }
