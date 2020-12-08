@@ -213,7 +213,7 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-.main .main_header,
+.main_header,
 .footer {
     width: 80%;
     margin: 0 auto;
@@ -551,7 +551,23 @@ p {
 .home_tabs .second_row .mobile_image {
     margin-bottom: 0px;
 }
-@media (max-width: 767px) {
+.biplife_page h3,
+.biplife_page h2,
+.biplife_page p {
+    text-align: center;
+}
+.biplife_page .buttons_container {
+    justify-content: center;
+}
+.triangle_vector{
+    position: relative;
+}
+.triangle_vector .triangle_img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+@media (max-width: 768px) {
     .fourth_row h3 {
         font-size: 16px;
         line-height: 22px;
@@ -715,7 +731,6 @@ p {
     .buttons_container .ios_button img {
         height: 20px;
     }
-
     .footer .footer_inner img {
         height: 15px;
         margin-bottom: 30px;
@@ -754,11 +769,11 @@ p {
     .header_wrapper {
         margin-bottom: 25px;
     }
-    .home_tabs{
+    .home_tabs {
         width: 90%;
         margin-bottom: 60px;
     }
-    .home_tabs .home_tabs_inner{
+    .home_tabs .home_tabs_inner {
         margin: 0px 15px;
     }
     .home_tabs .tab-content {
@@ -766,7 +781,7 @@ p {
         box-shadow: -3px 4px 10px -8px rgb(0 0 0 / 10%);
         position: relative;
     }
-    .home_tabs .tab-content > .active{
+    .home_tabs .tab-content > .active {
         padding: 15px;
     }
     .home_tabs .nav-tabs .nav-item a {
@@ -790,10 +805,9 @@ p {
         width: 100%;
     }
     .home_tabs .main_inner,
-    .second_row {
+    .home_tabs .second_row {
         flex-direction: row;
     }
-
     .home_tabs h3,
     .home_tabs h2 {
         font-size: 10px;
@@ -809,33 +823,48 @@ p {
     .home_tabs .btn_primary,
     .home_tabs .btn_primary_invert,
     .home_tabs .link_primary {
-        font-size: 8px!important;
+        font-size: 8px !important;
         line-height: 12px;
     }
-    .home_tabs .btn_primary, .home_tabs .btn_primary_invert, .home_tabs .link_primary{
-        border-radius: 6px!important;
-        padding: 5px 10px!important;
+    .home_tabs .btn_primary,
+    .home_tabs .btn_primary_invert,
+    .home_tabs .link_primary {
+        border-radius: 6px !important;
+        padding: 5px 10px !important;
     }
-    .home_tabs .details_area{
+    .home_tabs .details_area {
         margin-bottom: 10px;
     }
-    .home_tabs .buttons_container{
+    .home_tabs .buttons_container {
         flex-direction: column;
     }
-    .home_tabs .buttons_container a:first-child{
+    .home_tabs .buttons_container a:first-child {
         margin-bottom: 10px;
     }
-    .home_tabs .buttons_container .btn_primary_invert{
+    .home_tabs .buttons_container .btn_primary_invert {
         margin-left: 0px;
     }
-    .home_tabs .tab-content{
+    .home_tabs .tab-content {
         padding-top: 0px;
     }
     .home_tabs .nav-tabs .nav-item a:first-child {
         border-top-left-radius: 30px;
     }
-    .home_tabs .third_row img{
+    .home_tabs .third_row img {
         height: 20px;
+    }
+    .btn_primary_invert {
+        border-radius: 10px !important;
+        padding: 9px 15px;
+    }
+    .biplife_page .first_row {
+        flex-direction: column-reverse;
+    }
+    .biplife_page .second_row {
+        flex-direction: column;
+    }
+    .biplife_page .main_inner {
+        margin-bottom: 0px;
     }
 }
 @media (min-width: 769px) and (max-width: 1366px) {
@@ -920,6 +949,9 @@ p {
     }
 }
 @media (max-width: 1024px) {
+    .triangle_vector .triangle_img{
+        display: none;
+    }
 }
 @media (max-width: 1366px) {
     .third_row h3 {
