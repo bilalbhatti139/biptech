@@ -112,6 +112,112 @@ nav,
 section {
     display: block;
 }
+
+/* switch for toggle button */
+.prices_toggler .switch {
+    position: relative;
+    display: inline-block;
+    width: 93px;
+    height: 35px;
+}
+.prices_toggler .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.prices_toggler .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.prices_toggler .slider:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #22ba76;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.prices_toggler input:checked + .slider {
+    background-color: #def5eb;
+}
+.prices_toggler input:focus + .slider {
+    box-shadow: 0 0 1px #def5eb;
+}
+.prices_toggler input:checked + .slider:before {
+    -webkit-transform: translateX(58px);
+    -ms-transform: translateX(58px);
+    transform: translateX(58px);
+}
+/* Rounded sliders */
+.prices_toggler .slider.round {
+    border-radius: 34px;
+}
+.prices_toggler .slider.round:before {
+    border-radius: 50%;
+}
+
+.bip_toggler .switch {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 3px;
+    top: 25px;
+}
+.bip_toggler .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.bip_toggler .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.bip_toggler .slider:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    background-color: #0057cf;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.bip_toggler input:checked + .slider {
+    background-color: #c4c4c4;
+}
+.bip_toggler input:focus + .slider {
+    box-shadow: 0 0 1px #c4c4c4;
+}
+.bip_toggler input:checked + .slider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.bip_toggler_headings {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     line-height: 1;
     font-family: "Gilroy", sans-serif;
@@ -559,18 +665,18 @@ p {
 .biplife_page .buttons_container {
     justify-content: center;
 }
-.triangle_vector{
+.triangle_vector {
     position: relative;
 }
-.triangle_vector .triangle_img{
+.triangle_vector .triangle_img {
     position: absolute;
     top: 0;
     z-index: -1;
 }
-.bullet_numbers{
+.bullet_numbers {
     counter-reset: my-awesome-counter;
 }
-.bullet_numbers li{
+.bullet_numbers li {
     transition: 0.2s all ease-in-out;
     position: relative;
     counter-increment: my-awesome-counter;
@@ -578,7 +684,7 @@ p {
     padding-left: 60px;
     border-radius: 20px;
 }
-.bullet_numbers li::before{
+.bullet_numbers li::before {
     transition: 0.2s all ease-in-out;
     position: absolute;
     left: 20px;
@@ -587,16 +693,16 @@ p {
     content: counter(my-awesome-counter);
     height: 30px;
     border-radius: 50%;
-    background: #F8DBA4;
+    background: #f8dba4;
     color: #fff;
     align-items: center;
     justify-content: center;
 }
-.bullet_numbers li:hover::before{
+.bullet_numbers li:hover::before {
     background: #ffffff;
     color: #292930;
 }
-.bullet_numbers li:hover{
+.bullet_numbers li:hover {
     overflow: hidden;
     background-image: url("../assets/images/orangevector.png");
     background-repeat: no-repeat;
@@ -604,20 +710,163 @@ p {
     background-position: center;
     background-size: cover;
 }
-.bullet_numbers li h4{
+.bullet_numbers li h4 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
 }
-.bullet_numbers li p{
+.bullet_numbers li p {
     font-size: 14px;
     margin-bottom: 0px;
 }
-.terminal_heading{
+.terminal_heading {
     font-weight: 700;
     font-size: 34px;
     margin: 50px 0px;
     margin-bottom: 70px;
+}
+.bip_shop .terminal_heading {
+    margin: 0px;
+    margin-bottom: 70px;
+}
+.prices_part {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.prices_toggler .span_one,
+.prices_toggler .span_two {
+    position: relative;
+    top: 9px;
+    font-weight: 500;
+}
+.prices_toggler .span_two {
+    margin-left: 10px;
+    position: relative;
+}
+.prices_toggler .span_two::after {
+    content: "(Save 25%)";
+    top: 17px;
+    position: absolute;
+    left: 0px;
+    width: fit-content;
+    font-size: 10px;
+}
+.prices_toggler .span_one {
+    margin-right: 10px;
+}
+.prices_part .bip_toggler,
+.prices_part .prices_toggler {
+    width: 50%;
+}
+.prices_part .bip_toggler {
+    text-align: left;
+}
+.prices_part .prices_toggler {
+    text-align: right;
+}
+.prices_cards{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.prices_cards .card_prices{
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 34px -33px;
+    position: relative;
+}
+.prices_cards .card_prices h3{  
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px;
+    color: #000;
+}
+.prices_cards .card_prices div span:first-child{
+    color: #BBCBD4;
+    text-decoration: line-through;
+}
+.prices_cards .card_prices div span{
+    font-size: 24px;
+    color: #01B6EB;
+    font-weight: 700;
+}
+.prices_cards .card_prices .card_prices_title{
+    background: #4ACD7F;
+    height: 20px;
+    border-radius: 20px;
+    width: 66%;
+    position: absolute;
+    top: -8px;
+    left: 17%;
+}
+.prices_cards .card_prices .card_prices_title span{
+    color: #ffffff!important;
+    position: absolute;
+    width: 74%;
+    left: 13%;
+    background: #4ACD7F;
+    height: 40px;
+    display: flex;
+    top: -50%;
+    border-radius: 40px;
+    font-size: 16px;
+    text-decoration: none!important;
+    align-items: center;
+    justify-content: center;
+}
+.prices_cards .card_prices p{  
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.prices_cards a,.prices_cards a:nth-child(2):hover{
+    color: #292930;
+}
+.prices_cards .btn_primary{
+    box-shadow: none;
+    background: #01b6eb;
+    width: 70%;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+.prices_cards .card_monthly{
+    margin: 0px 50px 0px auto;
+}
+.prices_cards .card_yearly{
+    margin: 0px auto 0px 50px;
+}
+.prices_cards .buttons_container{
+    flex-direction: column;
+}
+.prices_cards a:nth-child(2){
+    font-weight: 500;
+    margin-top: 10px;
+}
+.prices_cards .line{
+    width: 70%!important;
+    border-bottom: 1px solid #D3D2D3;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.unlimited_storage li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.unlimited_storage li img {
+    margin-right: 5px;
 }
 @media (max-width: 768px) {
     .fourth_row h3 {
@@ -918,14 +1167,84 @@ p {
     .biplife_page .main_inner {
         margin-bottom: 0px;
     }
-    .terminal .mobile_image{
+    .terminal .mobile_image {
         margin: 0 auto;
     }
-    .terminal h4 , .terminal p{
+    .terminal h4,
+    .terminal p {
         text-align: left;
     }
-    .buttons_container .btn_primary{
-       margin: unset;
+    .buttons_container .btn_primary {
+        margin: unset;
+    }
+    .terminal_heading {
+        font-size: 20px;
+    }
+    .bip_toggler_headings span {
+        font-size: 12px;
+    }
+    .prices_part .bip_toggler {
+        width: 58%;
+    }
+    .prices_part .bip_toggler {
+        margin-right: 2%;
+    }
+    .prices_part .prices_toggler {
+        width: 40%;
+    }
+    .bip_toggler .switch{
+        width: 100%;
+    }
+    .prices_toggler .span_two{
+        display: none;
+    }
+    .prices_toggler span{
+        font-size: 12px;
+        top: 0px!important;
+    }
+    .prices_toggler .switch{
+        height: 15px;
+        width: 55px;
+    }
+    .main_inner{
+        width: 90%;
+    }
+    .prices_toggler input:checked + .slider:before{
+        transform: translateX(40px);
+    }
+    .prices_toggler .slider:before{
+        height: 15px;
+        width: 15px;
+    }
+    .prices_cards .card_prices .card_prices_title span{
+        font-size: 10px;
+    }
+    .prices_cards .card_monthly{
+        margin: 0px 15px 0px auto;
+    }
+    .prices_cards .card_yearly{
+        margin: 0px auto 0px 15px;
+    }
+    .prices_cards .card_prices{
+        width: 40%;
+    }
+    .prices_cards .card_prices h3{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .prices_cards .card_prices div span{
+        font-size: 14px;
+    }
+    .prices_cards .card_prices p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .unlimited_storage li{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .unlimited_storage li img{
+        height: 10px;
     }
 }
 @media (min-width: 769px) and (max-width: 1366px) {
@@ -939,6 +1258,42 @@ p {
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+    .prices_cards .card_prices .card_prices_title span{
+        font-size: 12px;
+    }
+    .bip_toggler_headings span {
+        font-size: 14px;
+    }
+    .prices_part .bip_toggler {
+        width: 58%;
+    }
+    .prices_part .bip_toggler {
+        margin-right: 2%;
+    }
+    .prices_part .prices_toggler {
+        width: 40%;
+    }
+    .bip_toggler .switch{
+        width: 100%;
+    }
+    .prices_toggler .span_two{
+        display: none;
+    }
+    .prices_toggler span{
+        font-size: 14px;
+        top: 0px!important;
+    }
+    .prices_toggler .switch{
+        height: 20px;
+        width: 70px;
+    }
+    .prices_toggler input:checked + .slider:before{
+        transform: translateX(55px);
+    }
+    .prices_toggler .slider:before{
+        height: 20px;
+        width: 20px;
+    }
     .home_tabs .nav-tabs .nav-item a {
         padding: 10px;
         padding-bottom: 20px;
@@ -1006,15 +1361,15 @@ p {
 }
 
 @media (max-width: 1366px) {
-    .bullet_numbers li h4{
+    .bullet_numbers li h4 {
         margin-bottom: 5px;
         font-size: 16px;
     }
-    .bullet_numbers li p{
+    .bullet_numbers li p {
         font-size: 12px;
         line-height: 16px;
     }
-    .bullet_numbers li::before{
+    .bullet_numbers li::before {
         width: 25px;
         height: 25px;
         font-size: 14px;
@@ -1027,22 +1382,22 @@ p {
     }
 }
 @media (max-width: 1024px) {
-    .triangle_vector .triangle_img{
+    .triangle_vector .triangle_img {
         display: none;
     }
-    .bullet_numbers li{
+    .bullet_numbers li {
         padding-left: 55px;
     }
-    .bullet_numbers li::before{
+    .bullet_numbers li::before {
         width: 20px;
         height: 20px;
         font-size: 10px;
     }
-    .bullet_numbers li h4{
+    .bullet_numbers li h4 {
         margin-bottom: 5px;
         font-size: 14px;
     }
-    .bullet_numbers li p{
+    .bullet_numbers li p {
         line-height: 14px;
         font-size: 10px;
     }
