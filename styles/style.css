@@ -416,6 +416,7 @@ a:hover {
     position: relative;
     padding-bottom: 100px;
 }
+
 .line {
     position: relative;
     width: 100% !important;
@@ -1246,6 +1247,55 @@ p {
     .unlimited_storage li img{
         height: 10px;
     }
+    .tablet_only, .desktop_only{
+        display: none;
+    }
+    .mobile_only{
+        display: block;
+    }
+    .triple_images{
+        flex-direction: column;
+    }
+    .triple_images div{
+        width: 60%!important;
+        margin-bottom: 50px;
+        left: 20%;
+    }
+    .triple_images span{
+        font-size: 13px!important;
+        line-height: 18px!important;
+        left: 10%!important;
+        width: 80%!important;
+    }
+}
+.triple_images_area{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.triple_images {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.triple_images div{
+    position: relative;
+    width: 30%;
+}
+.triple_images div img{
+    width: 100%;
+}
+
+.triple_images span{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    color: #fff;
+    width: 70%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
 }
 @media (min-width: 769px) and (max-width: 1366px) {
     h2 {
@@ -1258,6 +1308,16 @@ p {
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+    .triple_images span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .mobile_only, .desktop_only{
+        display: none!important;
+    }
+    .tablet_only{
+        display: block!important;
+    }
     .prices_cards .card_prices .card_prices_title span{
         font-size: 12px;
     }
@@ -1328,6 +1388,12 @@ p {
     }
 }
 @media (min-width: 768px) {
+    .mobile_only, .tablet_only{
+        display: none;
+    }
+    .desktop_only{
+        display: block;
+    }
     .footer_rectangle img {
         width: 70px;
     }
@@ -1379,6 +1445,11 @@ p {
     }
     .third_row p {
         width: 100%;
+    }
+}
+@media (min-width: 1025px) {
+    .bip_content .main_header{
+        padding-bottom: 0px;
     }
 }
 @media (max-width: 1024px) {
