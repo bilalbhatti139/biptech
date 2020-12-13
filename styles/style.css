@@ -296,7 +296,7 @@ nav li a {
 }
 nav {
   width: 100%;
-  padding: 30px 0px !important;
+  padding: 20px 0px !important;
 }
 .button_radius {
   border-radius: 15px;
@@ -345,7 +345,7 @@ a:hover {
 }
 .head_side_links .get_started {
   background-color: #01b6eb;
-  padding: 19px 35px;
+  padding: 15px 20px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -522,6 +522,8 @@ p {
 }
 .footer .footer_inner li a {
   font-size: 14px;
+  color: #292930;
+  font-weight: 500;
 }
 .footer .footer_inner ul li {
   margin-bottom: 25px;
@@ -541,7 +543,7 @@ p {
   background: #01b6eb;
   color: #ffffff;
   border-radius: 18px;
-  padding: 20px;
+  padding: 15px 20px;
   font-weight: bold;
   font-size: 14px;
   width: fit-content;
@@ -681,7 +683,7 @@ p {
 }
 .home_tabs h3,
 .home_tabs h2 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   margin-bottom: 15px;
 }
@@ -696,11 +698,12 @@ p {
 .home_tabs .link_primary {
   font-size: 10px;
   border-radius: 12px;
-  padding: 13px 15px;
+  padding: 15px 20px;
 }
 .home_tabs .fourth_row .fourth_one,
 .home_tabs .third_row .third_one {
   margin-bottom: 30px;
+  padding-top: 40px;
 }
 .home_tabs .fourth_row p,
 .home_tabs .second_row .mobile_image {
@@ -1580,4 +1583,12 @@ p {
   .home_tabs .nav-tabs .nav-item a.active span:after {
     top: 15px;
   }
+}
+
+.bip-header {
+  padding: 0;
+}
+
+.terminal .bip-header {
+  padding-bottom: 50px;
 }
