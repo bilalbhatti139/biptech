@@ -21,49 +21,49 @@
     <div class="container header_wrapper">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-              <img class="img-fluid" src="./assets/images/logo.png" />
+                <img class="img-fluid" src="./assets/images/logo.png" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span>
-              <span></span>
-              <span></span>
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <div class="collapse navbar_items navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Our Products
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Our Services
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Get Help</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get Help</a>
+                    </li>
+                </ul>
             </div>
             <div class="head_side_links">
-              <a href="#">Sign In</a>
-              <a href="" class="get_started button_radius">Get Started</a>
+                <a href="#">Sign In</a>
+                <a href="" class="get_started button_radius">Get Started</a>
             </div>
             <div class="language_links"><a class="lang_active">French</a>&nbsp;&nbsp;/<a>English</a></div>
-          </nav>
+        </nav>
     </div>
     <div class="main terminal bip_shop">
         <div class="container main_header bip-header ">
@@ -95,66 +95,112 @@
         <h1 class="text-center terminal_heading">Create your shop in few steps </h1>
         <div class="container first_row main_inner">
             <div class="details_area">
-                <ul class="bullet_numbers">
+                <ul class="bullet_numbers nav nav-tabs">
                     <li>
-                        <h4>Validate shop owner phone number</h4>
-                        <p>This steps makes sure that your number is active. You will always use
-                            your number to log in your shop </p>
+                        <a data-toggle="tab" href="#tab1" class="active">
+                            <h4>Validate shop owner phone number</h4>
+                            <p>This steps makes sure that your number is active. You will always use
+                                your number to log in your shop </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Create your code PIN </h4>
-                        <p>Your code PIN should be secret. it protect your shop from fraudulent access. You will need it
-                            everytime you want to connect to your shop </p>
+                        <a data-toggle="tab" href="#tab2">
+                            <h4>Create your code PIN </h4>
+                            <p>Your code PIN should be secret. it protect your shop from fraudulent access. You will
+                                need it
+                                everytime you want to connect to your shop </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Select your shop type and name your shop </h4>
-                        <p>Base on your shop type we will suggest predefined products from our templates. This helps you
-                            to be up and running fast Your shop URL will be needed to sign in your shop </p>
+                        <a data-toggle="tab" href="#tab3">
+                            <h4>Select your shop type and name your shop </h4>
+                            <p>Base on your shop type we will suggest predefined products from our templates. This helps
+                                you
+                                to be up and running fast Your shop URL will be needed to sign in your shop </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Validate shop owner phone number</h4>
-                        <p>Select products that you recognize from the list. Sit back and relax, we will set up your
-                            shop. You will need to add a Mobile Money account and you will be ready to go . </p>
+                        <a data-toggle="tab" href="#tab4">
+                            <h4>Validate shop owner phone number</h4>
+                            <p>Select products that you recognize from the list. Sit back and relax, we will set up your
+                                shop. You will need to add a Mobile Money account and you will be ready to go . </p>
+
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="image_area">
-                <div class="mobile_image">
+            <div class="image_area tab-content">
+                <div class="mobile_image tab-pane fade in active show" id="tab1">
                     <img class="img-fluid" src="./assets/images/resseler-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab2">
+                    <img class="img-fluid" src="./assets/images/devices.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab3">
+                    <img class="img-fluid" src="./assets/images/in-agent-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab4">
+                    <img class="img-fluid" src="./assets/images/in-store-agent-2.png" />
                 </div>
             </div>
         </div>
         <h1 class="text-center terminal_heading">Sell, sell , sell and accept payments </h1>
         <div class="container second_row first_row main_inner">
-            <div class="image_area">
-                <div class="mobile_image">
+            <div class="image_area tab-content">
+                <div class="mobile_image tab-pane fade in active show" id="tab5">
                     <img class="img-fluid" src="./assets/images/resseler-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab6">
+                    <img class="img-fluid" src="./assets/images/devices.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab7">
+                    <img class="img-fluid" src="./assets/images/in-agent-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab8">
+                    <img class="img-fluid" src="./assets/images/in-store-agent-2.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab9">
+                    <img class="img-fluid" src="./assets/images/in-store-agent-2.png" />
                 </div>
             </div>
             <div class="details_area">
-                <ul class="bullet_numbers">
+                <ul class="bullet_numbers nav nav-tabs">
                     <li>
-                        <h4>Add customer products in the cart</h4>
-                        <p>The cashier can edit product quantity or price based on the negotiation with the customer</p>
+                        <a data-toggle="tab" href="#tab5" class="active">
+                            <h4>Add customer products in the cart</h4>
+                            <p>The cashier can edit product quantity or price based on the negotiation with the customer
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>See the amount in your register </h4>
-                        <p>The figure you see there should be the amount you will get if you were to count the cash in
-                            the register</p>
+                        <a data-toggle="tab" href="#tab6">
+                            <h4>See the amount in your register </h4>
+                            <p>The figure you see there should be the amount you will get if you were to count the cash
+                                in
+                                the register</p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Monitor the sales from different angles </h4>
-                        <p>if the customer needs some cash, customer’s mobile money account will be debited and the you
-                            will give the amount of cash requested to the customer </p>
+                        <a data-toggle="tab" href="#tab7">
+                            <h4>Monitor the sales from different angles </h4>
+                            <p>if the customer needs some cash, customer’s mobile money account will be debited and the
+                                you
+                                will give the amount of cash requested to the customer </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Give Small change </h4>
-                        <p>When you do not have enough cash in your register, you can return the balance in customer’s
-                            mobile money account</p>
+                        <a data-toggle="tab" href="#tab8">
+                            <h4>Give Small change </h4>
+                            <p>When you do not have enough cash in your register, you can return the balance in
+                                customer’s
+                                mobile money account</p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Print receipt </h4>
-                        <p>Your customer needs a receipt? no wories juts hit the “print” button </p>
+                        <a data-toggle="tab" href="#tab9">
+                            <h4>Print receipt </h4>
+                            <p>Your customer needs a receipt? no wories juts hit the “print” button </p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -162,57 +208,92 @@
         <h1 class="text-center terminal_heading">Monitor your shop with no stress </h1>
         <div class="container first_row main_inner">
             <div class="details_area">
-                <ul class="bullet_numbers">
+                <ul class="bullet_numbers nav nav-tabs">
                     <li>
-                        <h4>Check your updated dashboard every hour </h4>
-                        <p>The data of all the activities in your shop will be summarized in a visua format for you on
-                            this page.</p>
+                        <a data-toggle="tab" href="#tab10" class="active">
+                            <h4>Check your updated dashboard every hour </h4>
+                            <p>The data of all the activities in your shop will be summarized in a visua format for you
+                                on
+                                this page.</p>
+                        </a>
                     </li>
                     <li>
-                        <h4>See the amount in your register </h4>
-                        <p>The figure you see there should be the amount you will get if you were to count the cash in
-                            the register</p>
+                        <a data-toggle="tab" href="#tab11">
+                            <h4>See the amount in your register </h4>
+                            <p>The figure you see there should be the amount you will get if you were to count the cash
+                                in
+                                the register</p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Monitor the sales from different angles </h4>
-                        <p>You can check the performance of your employee, your clients that buy the most from you , the
-                            category that you sold the most, etc. </p>
+                        <a data-toggle="tab" href="#tab12">
+                            <h4>Monitor the sales from different angles </h4>
+                            <p>You can check the performance of your employee, your clients that buy the most from you ,
+                                the
+                                category that you sold the most, etc. </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Apply various filters </h4>
-                        <p>Slice your data base on different filters and adjust your sales methods</p>
+                        <a data-toggle="tab" href="#tab13">
+                            <h4>Apply various filters </h4>
+                            <p>Slice your data base on different filters and adjust your sales methods</p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="image_area">
-                <div class="mobile_image">
+            <div class="image_area tab-content">
+                <div class="mobile_image tab-pane fade in active show" id="tab10">
                     <img class="img-fluid" src="./assets/images/resseler-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab11">
+                    <img class="img-fluid" src="./assets/images/devices.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab12">
+                    <img class="img-fluid" src="./assets/images/in-agent-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab13">
+                    <img class="img-fluid" src="./assets/images/in-store-agent-2.png" />
                 </div>
             </div>
         </div>
         <h1 class="text-center terminal_heading">Resell services and make more money </h1>
         <div class="container second_row first_row main_inner">
-            <div class="image_area">
-                <div class="mobile_image">
+            <div class="image_area tab-content">
+                <div class="mobile_image tab-pane fade in active show" id="tab14">
                     <img class="img-fluid" src="./assets/images/resseler-3.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab15">
+                    <img class="img-fluid" src="./assets/images/devices.png" />
+                </div>
+                <div class="mobile_image tab-pane fade" id="tab16">
+                    <img class="img-fluid" src="./assets/images/in-agent-3.png" />
                 </div>
             </div>
             <div class="details_area">
-                <ul class="bullet_numbers">
+                <ul class="bullet_numbers nav nav-tabs">
                     <li>
-                        <h4>Earn commission on airtime sales </h4>
-                        <p>The hundreds customer who come in your shop everyday may not buy your products but might need
-                            something other service that you can resell </p>
+                        <a data-toggle="tab" href="#tab14" class="active">
+                            <h4>Earn commission on airtime sales </h4>
+                            <p>The hundreds customer who come in your shop everyday may not buy your products but might
+                                need
+                                something other service that you can resell </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Process Bills and make some money </h4>
-                        <p>Helping your customer with their bills is easy. Help to collect payment for various utulity
-                            bill and expand your revenue streams </p>
+                        <a data-toggle="tab" href="#tab15">
+                            <h4>Process Bills and make some money </h4>
+                            <p>Helping your customer with their bills is easy. Help to collect payment for various
+                                utulity
+                                bill and expand your revenue streams </p>
+                        </a>
                     </li>
                     <li>
-                        <h4>Resell many more from the universal shop </h4>
-                        <p>There are many more ways for you to make money. Go to the universal shop menu and discover
-                            all the services you can resell and the commissions you can make </p>
+                        <a data-toggle="tab" href="#tab16">
+                            <h4>Resell many more from the universal shop </h4>
+                            <p>There are many more ways for you to make money. Go to the universal shop menu and
+                                discover
+                                all the services you can resell and the commissions you can make </p>
+                        </a>
                     </li>
                 </ul>
             </div>

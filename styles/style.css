@@ -420,7 +420,6 @@ a:hover {
     margin-bottom: 70px;
 }
 .home_tabs .main_inner {
-    width: 80%;
     margin-bottom: 0px;
 }
 
@@ -723,7 +722,8 @@ p {
 .bullet_numbers {
     counter-reset: my-awesome-counter;
 }
-.bullet_numbers li {
+.bullet_numbers li a{
+    display: block;
     transition: 0.2s all ease-in-out;
     position: relative;
     counter-increment: my-awesome-counter;
@@ -732,7 +732,7 @@ p {
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.bullet_numbers li::before {
+.bullet_numbers li a::before {
     transition: 0.2s all ease-in-out;
     position: absolute;
     left: 20px;
@@ -746,12 +746,12 @@ p {
     align-items: center;
     justify-content: center;
 }
-.bullet_numbers li:hover::before {
+.bullet_numbers li a:hover::before {
     background: #ffffff!important;
     color: #292930;
     font-weight: 700;
 }
-.bullet_numbers li:hover {
+.bullet_numbers li a:hover {
     overflow: hidden;
     background-image: url("../assets/images/orangevector.png");
     background-repeat: no-repeat;
@@ -759,12 +759,12 @@ p {
     background-position: center;
     background-size: cover;
 }
-.bullet_numbers li.active::before {
+.bullet_numbers li a.active::before {
     background: #ffffff;
     color: #292930;
     font-weight: 700;
 }
-.bullet_numbers li.active {
+.bullet_numbers li a.active {
     overflow: hidden;
     background-image: url("../assets/images/orangevector.png");
     background-repeat: no-repeat;
@@ -775,20 +775,21 @@ p {
 .bullet_numbers li a {
     color: #292930;
 }
-.bullet_numbers li h4 {
+.bullet_numbers li a h4 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
 }
-.bullet_numbers li p {
+.bullet_numbers li a p {
     font-size: 14px;
+    line-height: 18px;
     margin-bottom: 0px;
 }
-.bullet_numbers li:hover a ,
-.bullet_numbers li:hover h4,
-.bullet_numbers li:hover p,.bullet_numbers li.active a,
-.bullet_numbers li.active h4,
-.bullet_numbers li.active p{
+.bullet_numbers li a:hover ,
+.bullet_numbers li a:hover h4,
+.bullet_numbers li a:hover p,.bullet_numbers li a.active,
+.bullet_numbers li a.active h4,
+.bullet_numbers li a.active p{
     color: #ffffff;
 }
 .nav-tabs{
@@ -799,6 +800,7 @@ p {
     font-size: 34px;
     margin: 50px 0px;
     margin-bottom: 70px;
+    padding: 0px 15px;
 }
 .bip_shop .terminal_heading {
     margin: 0px;
@@ -1323,9 +1325,7 @@ p {
         height: 15px;
         width: 55px;
     }
-    .main_inner {
-        width: 90%;
-    }
+
     .prices_toggler input:checked + .slider:before {
         transform: translateX(40px);
     }
@@ -1337,13 +1337,17 @@ p {
         font-size: 10px;
     }
     .prices_cards .card_monthly {
-        margin: 0px 15px 0px auto;
+        margin: 0px auto;
     }
     .prices_cards .card_yearly {
-        margin: 0px auto 0px 15px;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+    .prices_cards{
+        flex-direction: column;
     }
     .prices_cards .card_prices {
-        width: 40%;
+        width: 80%;
     }
     .prices_cards .card_prices h3 {
         font-size: 12px;
@@ -1590,9 +1594,7 @@ p {
     .triangle_vector .triangle_img {
         display: none;
     }
-    .bullet_numbers li {
-        padding-left: 55px;
-    }
+ 
     .bullet_numbers li::before {
         width: 20px;
         height: 20px;
