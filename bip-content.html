@@ -23,18 +23,11 @@
   <body class="bip_content">
     <div class="container header_wrapper">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#">
           <img class="img-fluid" src="./assets/images/logo.png" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
@@ -42,40 +35,22 @@
         <div class="collapse navbar_items navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Our Products
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Our Services
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
@@ -90,6 +65,7 @@
           <a href="#">Sign In</a>
           <a href="" class="get_started button_radius">Get Started</a>
         </div>
+        <div class="language_links"><a class="lang_active">French</a>&nbsp;&nbsp;/<a>English</a></div>
       </nav>
     </div>
     <div class="main terminal bip_shop">
@@ -159,42 +135,61 @@
       <h1 class="text-center terminal_heading">How to use Bip Connect</h1>
       <div class="container first_row main_inner">
         <div class="details_area">
-          <ul class="bullet_numbers">
-            <li>
-              <h4>Bip Terminal Model S</h4>
-              <p>
-                His is a simple android terminal that allows you to run your
-                shop and accept cash and mobile money payments
-              </p>
+          <ul class="bullet_numbers nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#tab1">
+                <h4>Bip Terminal Model S</h4>
+                <p>
+                  His is a simple android terminal that allows you to run your
+                  shop and accept cash and mobile money payments
+                </p>
+              </a>
             </li>
             <li>
-              <h4>Bip Terminal Moce C</h4>
-              <p>
-                This terminal is designer for shop who wants to process bank
-                card ( Visa. Mastercard). The terminal is EMV compatible and
-                respects all security standards
-              </p>
+              <a data-toggle="tab" href="#tab2">
+                <h4>Bip Terminal Moce C</h4>
+                <p>
+                  This terminal is designer for shop who wants to process bank
+                  card ( Visa. Mastercard). The terminal is EMV compatible and
+                  respects all security standards
+                </p>
+              </a>
             </li>
             <li>
-              <h4>Android Tablets</h4>
-              <p>
-                If your cash register sits in a corder of your shop all time and
-                android tablet may help your to run the shop more conveniently
-              </p>
+              <a data-toggle="tab" href="#tab3">
+                <h4>Android Tablets</h4>
+                <p>
+                  If your cash register sits in a corder of your shop all time
+                  and android tablet may help your to run the shop more
+                  conveniently
+                </p>
+              </a>
             </li>
             <li>
-              <h4>Solar Power Bank</h4>
-              <p>
-                We know electricity can be very instable in our cities, but your
-                customers have to be served. Our solar power supply give your
-                12h hours of batery power and help you to always up and running
-              </p>
+              <a data-toggle="tab" href="#tab4">
+                <h4>Solar Power Bank</h4>
+                <p>
+                  We know electricity can be very instable in our cities, but
+                  your customers have to be served. Our solar power supply give
+                  your 12h hours of batery power and help you to always up and
+                  running
+                </p>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="image_area">
-          <div class="mobile_image">
+        <div class="image_area tab-content">
+          <div class="mobile_image tab-pane fade in active show" id="tab1">
             <img class="img-fluid" src="./assets/images/resseler-3.png" />
+          </div>
+          <div class="mobile_image tab-pane fade" id="tab2">
+            <img class="img-fluid" src="./assets/images/devices.png" />
+          </div>
+          <div class="mobile_image tab-pane fade" id="tab3">
+            <img class="img-fluid" src="./assets/images/in-agent-3.png" />
+          </div>
+          <div class="mobile_image tab-pane fade" id="tab4">
+            <img class="img-fluid" src="./assets/images/in-store-agent-2.png" />
           </div>
         </div>
       </div>
