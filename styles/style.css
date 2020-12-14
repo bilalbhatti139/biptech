@@ -1017,6 +1017,12 @@ p {
     margin-right: 30px;
 }
 @media (max-width: 768px) {
+    .help_links a{
+        font-size: 9px;
+    }
+    .help_border{
+        width: 80%;
+    }
     .help_main_image,
     .help_links {
         width: 90%;
@@ -1658,8 +1664,8 @@ p {
 @media (max-width: 1024px) {
     .help_blocks_conatainer .help_block {
         width: 100%;
-        padding: px;
-        width: 80%;
+        padding: 15px!important;
+        width: 90%;
         padding: 20px;
         margin: 0 auto;
         margin-bottom: 30px;
@@ -1670,7 +1676,7 @@ p {
         margin-bottom: 5px;
     }
     .help_blocks_conatainer .help_block .help_img{
-        width: auto;
+        width: inherit;
     }
     .help_blocks_conatainer .help_block p {
         text-align: left;
