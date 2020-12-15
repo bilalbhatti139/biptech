@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <!-- import font-awesome -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Import CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home Page</title>
@@ -72,15 +73,37 @@
                 </div>
                 <h1 class="terminal_heading">Sending money</h1>
                 <div class="container help2_conatainer">
-                    <div class="dropdown_help">
-                        <div id="dropdown_help_button" class="dropdown_help_button">
-                            Getting started <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <div id="dropdown_help_menu" class="dropdown_help_menu">
-                            <a href="#">How do i Send money Transfer Wise ?</a>
-                            <a href="#">How do i Send money Transfer Wisthrwhtrwhrwhwrhehe ?</a>
-                            <a href="#">How do i Send money Transfer Wisenhbrwtw ?</a>
-                        </div>
+                    <button class="accordion" id="accordion1">Getting started <span
+                            class="fa fa-chevron-down"></span></button>
+                    <div class="panel">
+                        <a href="">1How do i Send money Transfer Wise ?</a>
+                        <a href="">How do i Send money Transfer Wisenhbrwtw ?</a>
+                        <a href="">How do i Send money Transfer Wisthrwhtrwhrwhwrhehe ?</a>
+                        <a href="">How do i Send money Transfer hstjstjWise ?</a>
+                    </div>
+                    <button class="accordion" id="accordion2">Getting started<span
+                            class="fa fa-chevron-down"></span></button>
+                    <div class="panel">
+                        <a href="">2How do i Send money Transfer Wise ?</a>
+                        <a href="">How do i Send money Transfer Wisenhbrwtw ?</a>
+                        <a href="">How do i Send money Transfer Wisthrwhtrwhrwhwrhehe ?</a>
+                        <a href="">How do i Send money Transfer hstjstjWise ?</a>
+                    </div>
+                    <button class="accordion" id="accordion3">Getting started<span
+                            class="fa fa-chevron-down"></span></button>
+                    <div class="panel">
+                        <a href="">3How do i Send money Transfer Wise ?</a>
+                        <a href="">How do i Send money Transfer Wisenhbrwtw ?</a>
+                        <a href="">How do i Send money Transfer Wisthrwhtrwhrwhwrhehe ?</a>
+                        <a href="">How do i Send money Transfer hstjstjWise ?</a>
+                    </div>
+                    <button class="accordion" id="accordion4">Getting started<span
+                            class="fa fa-chevron-down"></span></button>
+                    <div class="panel">
+                        <a href="">3How do i Send money Transfer Wise ?</a>
+                        <a href="">How do i Send money Transfer Wisenhbrwtw ?</a>
+                        <a href="">How do i Send money Transfer Wisthrwhtrwhrwhwrhehe ?</a>
+                        <a href="">How do i Send money Transfer hstjstjWise ?</a>
                     </div>
                 </div>
             </div>
@@ -144,17 +167,37 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script>
-        document.getElementById('dropdown_help_menu').style.display = 'none';
-        var help_button = document.getElementById('dropdown_help_button');
-        help_button.onclick = function () {
-            var div = document.getElementById('dropdown_help_menu');
-            if (div.style.display !== 'flex') {
-                div.style.display = 'flex';
-            }
-            else {
-                div.style.display = 'none';
-            }
-        };
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        $("#accordion1").click(function () {
+            var span = $("#accordion1").find("span");   
+            span.toggleClass("invert");
+        });
+        $("#accordion2").click(function () {
+            var span = $("#accordion2").find("span");   
+            span.toggleClass("invert");
+        });
+        $("#accordion3").click(function () {
+            var span = $("#accordion3").find("span");   
+            span.toggleClass("invert");
+        });
+        $("#accordion4").click(function () {
+            var span = $("#accordion4").find("span");   
+            span.toggleClass("invert");
+        });
     </script>
 </body>
 

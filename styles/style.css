@@ -1016,11 +1016,59 @@ p {
     width: inherit;
     margin-right: 30px;
 }
+.help2_conatainer .panel{
+    padding-top: 50px;
+    display: flex;
+    padding-left: 10%;
+    flex-direction: column;
+}
+.help2_conatainer{
+    margin-bottom: 100px;
+}
+.help2_conatainer .panel a{
+    color: #293B5E;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.accordion {
+    background-color: #F0F3F6;
+    color: #444;
+    cursor: pointer;
+    padding: 50px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-weight: 700;
+}
+.accordion span{
+    float: right;
+    color: #00B1FF;
+}
+.accordion .invert{
+    transform: rotate(180deg);
+}
+.accordion.active,
+.accordion:hover,.accordion:focus {
+    outline: none;
+    background-color: #F0F3F6;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 @media (max-width: 768px) {
-    .help_links a{
+    .help_links a {
         font-size: 9px;
     }
-    .help_border{
+    .help_border {
         width: 80%;
     }
     .help_main_image,
@@ -1463,6 +1511,20 @@ p {
     .footer :nth-child(4) {
         order: 6;
     }
+    .help2_conatainer .panel a{
+        font-size: 12px;
+        margin-bottom: 10px;
+       
+    }
+    .help2_conatainer .panel{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    .accordion {
+        font-size: 16px;
+        padding: 30px 30px;
+    }
 }
 .triple_images_area {
     flex-direction: column;
@@ -1656,42 +1718,16 @@ p {
         padding-bottom: 0px;
     }
 }
-.help_page h1{
+.help_page h1 {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0px;
 }
-.dropdown_help{
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-}
-.dropdown_help .dropdown_help_button{
-    background: #F0F3F6;
-    color: #334466;
-    display: flex;
-    font-size: 25px;
-    padding: 50px;
-    font-weight: 700;
-    justify-content: space-between;
-}
-.dropdown_help_menu{
-    position: absolute;
-    width: 80%;
-    flex-direction: column;
-    margin-top: 50px;
-    left: 10%;
-}
-.dropdown_help_menu a{
-    color: #293B5E;
-    font-weight: 600;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+
 @media (max-width: 1024px) {
     .help_blocks_conatainer .help_block {
         width: 100%;
-        padding: 15px!important;
+        padding: 15px !important;
         width: 90%;
         padding: 20px;
         margin: 0 auto;
@@ -1702,7 +1738,7 @@ p {
         line-height: 14px;
         margin-bottom: 5px;
     }
-    .help_blocks_conatainer .help_block .help_img{
+    .help_blocks_conatainer .help_block .help_img {
         width: inherit;
     }
     .help_blocks_conatainer .help_block p {
