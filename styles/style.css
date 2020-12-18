@@ -405,7 +405,7 @@ a:hover {
     position: absolute;
     width: 90%;
     left: 5%;
-    border-bottom: 4px solid #2e2e2e;
+    border-bottom: 4px solid rgb(255 179 0);
     top: 50px;
 }
 .main_inner {
@@ -1056,7 +1056,13 @@ p {
     outline: none;
     background-color: #F0F3F6;
 }
-
+.help_page .nav-tabs .nav-link.active{
+    border: 0px!important;
+    color: rgb(255 179 0)!important;
+}
+.home_tabs .nav-tabs .nav-item a.active{
+    color: rgb(255 179 0)!important;
+}
 .panel {
     padding: 0 18px;
     background-color: white;
