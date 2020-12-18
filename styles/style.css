@@ -1000,9 +1000,13 @@ p {
     grid-template-columns: 1fr 4fr;
     align-items: center;
 }
+.help_page .nav-tabs .nav-link:hover{
+    border: 1px solid transparent!important;
+}
 .help_blocks_conatainer .help_block h3 {
     font-weight: bold;
     font-size: 25px;
+    color: #292930;
     margin-bottom: 15px;
 }
 .help_blocks_conatainer .help_block p {
